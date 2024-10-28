@@ -1,113 +1,88 @@
-import Image from "next/image";
+import Image from "next/image"
+import Header from "../components/layout/Header"
+import Work from "../components/layout/Work"
+import { CircleArrowDown } from "lucide-react"
 
-export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+function HomePage(){
+    return(
+        <>
+        <Header/>
+        <main className="max-w-screen-2xl mx-auto bg-pink-300 h-[30rem]">
+            <div>
+                <h1 className="text-center text-black text-5xl font-bold pt-40">Work</h1>
+                <hr className="my-10 border-t-2 border-black w-1/2 mx-auto" />
+                <p className="text-center text-black md:mx-32 xl:mx-96">{`Check out some selected projects I've worked on, which have helped me 
+                shape and improve my design process.`}</p>
+                <CircleArrowDown className="text-black mx-auto mt-12 md:mt-16" />
+            </div>
+        </main>
+
+        <div className="max-w-screen-2xl mx-auto pt-20 flex-col bg-pink-100 h-[80rem] sm:h-[100rem] xl:h-[140rem]">
+            {/* haven and hues (default setting) */}
+            <div className="sm:hidden container mx-auto h-[127px] w-[270px] shadow-lg shadow-zinc-900">
+                    <Image src="/images/haven&hues.png" alt="project 1" width={360} height={300}/>
+                    <h2 className="font-bold text-black text-left mt-6 font-serif">Haven & Hues</h2>
+                    <p className="text-sm mt-6">Haven & Hues is a thoughtfully designed e-commerce platform specializing in stylish and curated home decor items. In this project, I utilized <b>HTML, CSS,</b>and <b>TypeScript</b>, along with design frameworks like <b>Tailwind CSS and Nextjs.</b></p>
+            </div>
+
+             {/* hijab co. (default settings) */}
+             <div className="sm:hidden container mx-auto h-[127px] w-[270px] shadow-lg shadow-zinc-900 mt-72">
+                    <Image src="/images/hijab.png" alt="project 2" width={360} height={300}/>
+                    <h2 className="font-bold text-black text-left mt-6 font-serif">Hijab Co.</h2>
+                    <p className="text-sm mt-6">Hijab Co. is a meticulously crafted e-commerce website for modest fashion, built to deliver a seamless and elegant user experience. Developed with HTML, Tailwind CSS, and Next.js, this project showcases my commitment to <b>pixel-perfect design</b> and attention to detail. </p>
+                    </div>
+
+            {/* npm (default settings) */}
+            <div className="sm:hidden container mx-auto h-[150px] w-[270px] shadow-lg shadow-zinc-900 mt-72">
+                    <Image src="/images/npm.png" alt="project 2" width={360} height={300}/>
+                    <h2 className="font-bold text-black text-left mt-6 font-serif">NPM</h2>
+                    <p className="text-sm mt-6">These projects demonstrate my skills in <b>TypeScript</b> showcasing strong typing, modular code, and a focus on performance.</p>
+                    </div>
+
+            {/* haven and hues (sm,md, lg setting) */}
+            <div className="hidden sm:block xl:hidden container mx-auto h-[250px] xl:h-[250px] w-[530px] shadow-lg shadow-zinc-900">
+                    <Image src="/images/haven&hues.png" alt="project 1" width={530} height={350}/>
+                    <h2 className="font-bold text-3xl text-black text-left mt-6 font-serif">Haven & Hues</h2>
+                    <p className="text-sm mt-6">Haven & Hues is a thoughtfully designed e-commerce platform specializing in stylish and curated home decor items. In this project, I utilized <b>HTML, CSS </b>and <b>TypeScript</b>, along with design frameworks like <b>Tailwind CSS and Nextjs.</b></p>
+            </div>
+
+            {/* hijab co. (sm,md,lg  setting) */}
+            <div className="hidden sm:block xl:hidden container mx-auto h-[250px]  lg:mt-64 xl:h-[250px] w-[530px] shadow-lg shadow-zinc-900 mt-60">
+                    <Image src="/images/hijab.png" alt="project 2" width={530} height={350}/>
+                    <h2 className="font-bold text-3xl text-black text-left mt-6 font-serif">Hijab Co.</h2>
+                    <p className="text-sm mt-6">Hijab Co. is a meticulously crafted e-commerce website for modest fashion, built to deliver a seamless and elegant user experience. Developed with HTML, Tailwind CSS, and Next.js, this project showcases my commitment to <b>pixel-perfect design</b> and attention to detail. </p>
+                    </div>
+
+            {/* npm (sm,md, lg setting) */}
+            <div className="hidden sm:block xl:hidden container mx-auto h-[295px] lg:mt-[16rem] xl:mt-[250px] w-[530px] shadow-lg shadow-zinc-900 mt-60">
+                    <Image src="/images/npm.png" alt="project 2" width={530} height={350}/>
+                    <h2 className="font-bold text-3xl text-black text-left mt-6 font-serif">NPM</h2>
+                    <p className="text-sm mt-6">These projects demonstrate my skills in <b>TypeScript</b> showcasing strong typing, modular code, and a focus on performance.</p>
+                    </div>
+
+            {/* haven & hues (xl setting) */}
+            <div className="hidden xl:block container mx-auto h-[30rem] w-[70rem] shadow-lg shadow-zinc-900">
+                    <Image className="w-[70rem] h-[30rem]" src="/images/haven&hues.png" alt="project 1" width={550} height={400}/>
+                    <h2 className="font-bold text-5xl text-black text-left mt-6 font-serif">Haven & Hues</h2>
+                    <p className="text-lg mt-6">Haven & Hues is a thoughtfully designed e-commerce platform specializing in stylish and curated home decor items. In this project, I utilized <b>HTML, CSS </b>and <b>TypeScript</b>, along with design frameworks like <b>Tailwind CSS and Nextjs.</b></p>
+            </div>
+
+            {/* hijab co. (xl setting) */}
+            <div className="hidden xl:block container mx-auto h-[30rem] w-[70rem] shadow-lg shadow-zinc-900 mt-60">
+                    <Image className="w-[70rem] h-[30rem]" src="/images/figma.png" alt="project 1" width={550} height={400}/>
+                    <h2 className="font-bold text-5xl text-black text-left mt-6 font-serif">Hijab Co.</h2>
+                    <p className="text-lg mt-6">Hijab Co. is a meticulously crafted e-commerce website for modest fashion, built to deliver a seamless and elegant user experience. Developed with HTML, Tailwind CSS, and Next.js, this project showcases my commitment to <b>pixel-perfect design</b> and attention to detail. </p>
+            </div>
+             {/* npm. (xl setting) */}
+             <div className="hidden xl:block container mx-auto h-[30rem] w-[70rem] shadow-lg shadow-zinc-900 mt-60">
+             <Image className="w-[70rem] h-[30rem]" src="/images/npm.png" alt="project 1" width={550} height={400}/>
+             <h2 className="font-bold text-5xl text-black text-left mt-6 font-serif">NPM</h2>
+                    <p className="text-lg mt-6">These projects demonstrate my skills in <b>TypeScript</b> showcasing strong typing, modular code, and a focus on performance.These projects demonstrate my skills in TypeScript, showcasing strong typing, modular code, and a focus on performance. </p>
+            </div>
+
         </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+        <Work/>
+        </>
+    )
 }
+export default HomePage
