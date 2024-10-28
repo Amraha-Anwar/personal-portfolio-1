@@ -34,7 +34,7 @@ function HomePage(){
 
             {/* npm (default settings) */}
             <div className="sm:hidden container mx-auto h-[150px] w-[270px] shadow-lg shadow-zinc-900 mt-72">
-                    <Image src="/images/npm.png" alt="project 2" width={360} height={300}/>
+                    <Image src="/images/npm.png" alt="project 3" width={360} height={300}/>
                     <h2 className="font-bold text-black text-left mt-6 font-serif">NPM</h2>
                     <p className="text-sm mt-6">These projects demonstrate my skills in <b>TypeScript</b> showcasing strong typing, modular code, and a focus on performance.</p>
                     </div>
@@ -55,7 +55,7 @@ function HomePage(){
 
             {/* npm (sm,md, lg setting) */}
             <div className="hidden sm:block xl:hidden container mx-auto h-[295px] lg:mt-[16rem] xl:mt-[250px] w-[530px] shadow-lg shadow-zinc-900 mt-60">
-                    <Image src="/images/npm.png" alt="project 2" width={530} height={350}/>
+                    <Image src="/images/npm.png" alt="project 3" width={530} height={350}/>
                     <h2 className="font-bold text-3xl text-black text-left mt-6 font-serif">NPM</h2>
                     <p className="text-sm mt-6">These projects demonstrate my skills in <b>TypeScript</b> showcasing strong typing, modular code, and a focus on performance.</p>
                     </div>
@@ -69,13 +69,13 @@ function HomePage(){
 
             {/* hijab co. (xl setting) */}
             <div className="hidden xl:block container mx-auto h-[30rem] w-[70rem] shadow-lg shadow-zinc-900 mt-60">
-                    <Image className="w-[70rem] h-[30rem]" src="/images/figma.png" alt="project 1" width={550} height={400}/>
+                    <Image className="w-[70rem] h-[30rem]" src="/images/hijab.png" alt="project 2" width={550} height={400}/>
                     <h2 className="font-bold text-5xl text-black text-left mt-6 font-serif">Hijab Co.</h2>
                     <p className="text-lg mt-6">Hijab Co. is a meticulously crafted e-commerce website for modest fashion, built to deliver a seamless and elegant user experience. Developed with HTML, Tailwind CSS, and Next.js, this project showcases my commitment to <b>pixel-perfect design</b> and attention to detail. </p>
             </div>
              {/* npm. (xl setting) */}
              <div className="hidden xl:block container mx-auto h-[30rem] w-[70rem] shadow-lg shadow-zinc-900 mt-60">
-             <Image className="w-[70rem] h-[30rem]" src="/images/npm.png" alt="project 1" width={550} height={400}/>
+             <Image className="w-[70rem] h-[30rem]" src="/images/npm.png" alt="project 3" width={550} height={400}/>
              <h2 className="font-bold text-5xl text-black text-left mt-6 font-serif">NPM</h2>
                     <p className="text-lg mt-6">These projects demonstrate my skills in <b>TypeScript</b> showcasing strong typing, modular code, and a focus on performance.These projects demonstrate my skills in TypeScript, showcasing strong typing, modular code, and a focus on performance. </p>
             </div>
