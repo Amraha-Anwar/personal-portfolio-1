@@ -19,7 +19,7 @@ function Footer(){
             <div className="pt-8">
             <hr className="md:hidden border-t-2 border-zinc-700 w-10/12 mx-auto"/>
             <h1 className="font-bold text-xl text-center md:text-left py-4 md:pt-9">Availability</h1>
-            <p className="text-center md:text-left">I typically focus on one project at a time due to my ongoing learning journey, but I'm open to discussing new opportunities.</p>
+            <p className="text-center md:text-left">{`I typically focus on one project at a time due to my ongoing learning journey, but I'm open to discussing new opportunities.`}</p>
             </div>
 
             <div className="pt-8">
