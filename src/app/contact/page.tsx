@@ -5,24 +5,24 @@ import Work from "@/components/layout/Work"
 function Contact(){
     return(
         <>
-        <div className=" lg:bg-pink-300 lg:py-9">
-        <div className="max-w-screen-2xl mx-auto bg-pink-200 p-6 lg:container lg:w-[40rem] lg:h-[40rem] lg:rounded-md lg:shadow-lg lg:shadow-pink-100">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl lg:ml-10 font-bold mb-6 lg:mb-16 text-center font-serif pt-20 lg:pt-8">Contact Me</h2>
+        <div className=" lg:bg-pink-50 lg:py-9">
+        <div className="max-w-screen-2xl mx-auto bg-white lg:border lg:border-teal-700 p-6 lg:container lg:w-[40rem] lg:h-[40rem] lg:rounded-md lg:shadow-lg lg:shadow-pink-300">
+            <h2 className="text-xl text-teal-800 sm:text-2xl md:text-3xl lg:text-5xl lg:ml-10 font-bold mb-6 lg:mb-16 text-center font-serif pt-20 lg:pt-8">Contact Me</h2>
             <form action="#">
                 <div className="mb-4 lg:mb-8 sm:mx-20 md:mx-32 lg:mx-16">
                     <label className="block text-black text-sm lg:text-lg font-bold mb-2">Name</label>
                     <input type="text" name="name" required 
-                        className="shadow appearance-none border rounded w-full py-4 px-3 text-black leading-tight focus:outline-none focus:ring focus:ring-pink-700" placeholder="Your Name"/>
+                        className="shadow appearance-none border rounded w-full py-4 px-3 text-black leading-tight focus:outline-none focus:ring focus:ring-teal-700" placeholder="Your Name"/>
                 </div>
                 <div className="mb-4 lg:mb-8 sm:mx-20 md:mx-32 lg:mx-16">
                     <label className="block text-black text-sm lg:text-lg font-bold mb-2">Email</label>
                     <input type="email" name="email" required
-                    className="shadow appearance-none boder rounded w-full py-4 px-3 text-black leading-tight focus:outline-none focus:ring focus:ring-pink-700" placeholder="Your Email"/>
+                    className="shadow appearance-none boder rounded w-full py-4 px-3 text-black leading-tight focus:outline-none focus:ring focus:ring-teal-700" placeholder="Your Email"/>
                 </div>
                 <div className="mb-4 lg:mb-2 sm:mx-20 md:mx-32 lg:mx-16">
                     <label className="block text-black text-sm lg:text-lg font-bold mb-2">Message</label>
                     <textarea name="message" flex-rows="4" required
-                    className="shadow appearance-none border rounded w-full py-6 px-3 text-black leading-tight focus:outline-none focus:ring focus:ring-pink-700" placeholder="Send me a Message"></textarea>
+                    className="shadow appearance-none border rounded w-full py-6 px-3 text-black leading-tight focus:outline-none focus:ring focus:ring-teal-700" placeholder="Send me a Message"></textarea>
                 </div>
                 <div className="flex items-center justify-between sm:ml-20 md:ml-32 lg:ml-16">
                     <button type="submit"

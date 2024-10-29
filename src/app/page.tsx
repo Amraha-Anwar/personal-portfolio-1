@@ -7,17 +7,17 @@ function HomePage(){
     return(
         <>
         <Header/>
-        <main className="max-w-screen-2xl mx-auto bg-pink-200 h-[30rem]">
+        <main className="max-w-screen-2xl mx-auto bg-zinc-900 h-[30rem]">
             <div>
-                <h1 className="text-center text-black text-5xl font-bold pt-40">Work</h1>
-                <hr className="my-10 border-t-2 border-black w-1/2 mx-auto" />
-                <p className="text-center text-black md:mx-32 xl:mx-96">{`Check out some selected projects I've worked on, which have helped me 
+                <h1 className="text-center text-white text-5xl font-bold pt-40">Work</h1>
+                <hr className="my-10 border-t-2 border-white w-1/2 mx-auto" />
+                <p className="text-center text-white md:mx-32 xl:mx-96">{`Check out some selected projects I've worked on, which have helped me 
                 shape and improve my design process.`}</p>
-                <CircleArrowDown className="text-black mx-auto mt-12 md:mt-16" />
+                <CircleArrowDown className="text-white mx-auto mt-12 md:mt-16" />
             </div>
         </main>
 
-        <div className="max-w-screen-2xl mx-auto pt-20 flex-col bg-pink-100 h-[80rem] sm:h-[100rem] xl:h-[140rem]">
+        <div className="max-w-screen-2xl mx-auto pt-20 flex-col bg-pink-50 h-[80rem] sm:h-[100rem] xl:h-[140rem]">
             {/* haven and hues (default setting) */}
             <div className="sm:hidden container mx-auto h-[127px] w-[270px] shadow-lg shadow-zinc-900">
                     <Image src="/images/haven&hues.png" alt="project 1" width={360} height={300}/>
