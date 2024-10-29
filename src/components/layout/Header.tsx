@@ -12,7 +12,7 @@ function Header(){
                     <p className="text-pink-900 text-sm md:text-lg lg:mt-11"> {`I'm here to make the digital world a little more beautiful and functional.`} </p>
                     <p className="text-pink-900 text-sm md:text-lg mt-4">{`Let's turn your ideas into digital reality!`}</p>
                 </div>
-                <div className="lg:hidden sm:ml-72 mt-5 md:ml-[-10px]  md:mt-14 mx-7 ">
+                <div className="lg:hidden sm:ml-72 mt-5 md:ml-[-10px]  md:mt-14 mx-9 ">
                         <Image className="w-[250px] h-[280px] rounded-full" src="/images/profile.png" alt="profile picture" width={400} height={400}/>
                     </div>
 

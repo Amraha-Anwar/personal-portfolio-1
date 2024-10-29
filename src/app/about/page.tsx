@@ -5,7 +5,7 @@ function About(){
     return(
         <>
         <main className="max-w-screen-2xl mx-auto bg-pink-300 h-[35rem] md:h-[40rem] lg:h-[45rem]">
-            <div className="sm:hidden pt-16 mx-3 ">
+            <div className="sm:hidden pt-16 mx-10 ">
             <div className="container rounded-full w-[17rem] h-[28rem] border border-black shadow-lg shadow-pink-50 bg-pink-200 ">
                 <h1 className=" text-center text-2xl font-bold pt-12 font-serif"><u className="underline-offset-8">ABOUT ME</u></h1> 
                 <h1 className="pt-10 mx-3 my-3 text-sm text-center">{`I'm Amraha Anwar. A front-end developer with a passion for crafting interactive and visually appealing web experiences.I've dedicated myself to honing my skills in web development and Artificial Intelligence. With a focus on front-end technologies, I've built a range of projects that showcase both technical expertise and creative flair.`}</h1>
