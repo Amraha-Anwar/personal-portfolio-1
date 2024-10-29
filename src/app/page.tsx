@@ -7,7 +7,7 @@ function HomePage(){
     return(
         <>
         <Header/>
-        <main className="max-w-screen-2xl mx-auto bg-pink-300 h-[30rem]">
+        <main className="max-w-screen-2xl mx-auto bg-pink-200 h-[30rem]">
             <div>
                 <h1 className="text-center text-black text-5xl font-bold pt-40">Work</h1>
                 <hr className="my-10 border-t-2 border-black w-1/2 mx-auto" />

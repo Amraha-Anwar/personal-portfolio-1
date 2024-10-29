@@ -5,9 +5,9 @@ import Work from "@/components/layout/Work"
 function Contact(){
     return(
         <>
-        <div className=" lg:bg-pink-900 lg:py-9">
+        <div className=" lg:bg-pink-300 lg:py-9">
         <div className="max-w-screen-2xl mx-auto bg-pink-200 p-6 lg:container lg:w-[40rem] lg:h-[40rem] lg:rounded-md lg:shadow-lg lg:shadow-pink-100">
-            <h2 className="text-xl sm:text-2xl lg:text-5xl lg:ml-10 font-bold mb-6 lg:mb-16 text-center font-serif pt-20 lg:pt-8">Contact Me</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl lg:ml-10 font-bold mb-6 lg:mb-16 text-center font-serif pt-20 lg:pt-8">Contact Me</h2>
             <form action="#">
                 <div className="mb-4 lg:mb-8 sm:mx-20 md:mx-32 lg:mx-16">
                     <label className="block text-black text-sm lg:text-lg font-bold mb-2">Name</label>
@@ -49,7 +49,7 @@ function Contact(){
 
                     <Link href="https://www.instagram.com/amrahaanwar/?hl=en" target="main">
                         <Image 
-                        className=" w-20 h-14 mt-7 sm:w-32 sm:h-24 md:w-40 md:h-28 md:mt-9 xl:w-64 xl:h-44" 
+                        className=" w-20 h-14 mt-7 xl:mt-9 sm:w-32 sm:h-24 md:w-40 md:h-28 md:mt-9 xl:w-64 xl:h-48" 
                         src="/images/insta.png" 
                         alt="Instagram logo" 
                         width={200} 
