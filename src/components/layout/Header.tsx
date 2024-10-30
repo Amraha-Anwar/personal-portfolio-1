@@ -3,7 +3,7 @@ import Image from "next/image"
 function Header(){
     return(
         <>
-        <header className=" bg-pink-50">
+        <header className="max-w-screen-2xl mx-auto bg-pink-50">
             <div className="max-w-screen-2xl mx-auto h-[40rem] flex flex-col md:flex md:flex-row">
                 <div className="mt-0 pt-10 md:pt-20 ml-5 sm:ml-10 lg:mr-44">
                 <h3 className="text-teal-950 font-serif font-bold text-lg">Hello!</h3>

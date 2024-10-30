@@ -4,7 +4,7 @@ import Image from "next/image"
 function Footer(){
     return(
         <>
-       <footer className="bg-zinc-800 h-[40rem] md:h-[25rem] mx-auto">
+       <footer className="max-w-screen-2xl mx-auto bg-zinc-800 h-[40rem] md:h-[25rem]">
         <div className="pt-10">
             <h2 className="sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-white text-center">NEED A DEVELOPER</h2>
         </div>
