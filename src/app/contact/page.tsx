@@ -6,7 +6,7 @@ function Contact(){
     return(
         <>
         <div className="max-w-screen-2xl mx-auto lg:bg-pink-50 lg:py-9">
-        <div className=" bg-white lg:border lg:border-teal-700 p-6 lg:container lg:w-[40rem] lg:h-[40rem] lg:rounded-md lg:shadow-lg lg:shadow-pink-300">
+        <div className="max-w-screen-2xl mx-auto bg-white lg:border lg:border-teal-700 p-6 lg:container lg:w-[40rem] lg:h-[40rem] lg:rounded-md lg:shadow-lg lg:shadow-pink-300">
             <h2 className="text-xl text-teal-800 sm:text-2xl md:text-3xl lg:text-5xl lg:ml-10 font-bold mb-6 lg:mb-16 text-center font-serif pt-20 lg:pt-8">Contact Me</h2>
             <form action="#">
                 <div className="mb-4 lg:mb-8 sm:mx-20 md:mx-32 lg:mx-16">
