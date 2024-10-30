@@ -4,28 +4,28 @@ import Image from "next/image"
 function Footer(){
     return(
         <>
-       <footer className="bg-pink-900 h-[40rem] md:h-[25rem] mx-auto">
+       <footer className="bg-zinc-800 h-[40rem] md:h-[25rem] mx-auto">
         <div className="pt-10">
             <h2 className="sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-white text-center">NEED A DEVELOPER</h2>
         </div>
         <div className="pt-8 md:flex md:flex-row md:space-x-14 lg:gap-x-20 xl:gap-x-32 mx-12 xl:mx-24">
         <div>
             <hr className="md:hidden border-t-2 border-black w-10/12 mx-auto"/>
-            <h1 className="font-bold text-xl text-black font-sans text-center md:text-left py-4 md:pt-16">Contact</h1>
-            <p className="text-center text-black md:text-left">Feel free to get in touch with me.<br/>
+            <h1 className="font-bold text-xl text-white font-sans text-center md:text-left py-4 md:pt-16">Contact</h1>
+            <p className="text-center text-white md:text-left">Feel free to get in touch with me.<br/>
             <span>Gmail:amrahaanwar@gmail.com</span></p>
             </div>
             
             <div className="pt-8">
             <hr className="md:hidden border-t-2 border-black w-10/12 mx-auto"/>
-            <h1 className="font-bold text-xl text-black font-sans text-center md:text-left py-4 md:pt-9">Availability</h1>
-            <p className="text-center text-black md:text-left">{`I typically focus on one project at a time due to my ongoing learning journey, but I'm open to discussing new opportunities.`}</p>
+            <h1 className="font-bold text-xl text-white font-sans text-center md:text-left py-4 md:pt-9">Availability</h1>
+            <p className="text-center text-white md:text-left">{`I typically focus on one project at a time due to my ongoing learning journey, but I'm open to discussing new opportunities.`}</p>
             </div>
 
             <div className="pt-8">
             <hr className="md:hidden border-t-2 border-black w-10/12 mx-auto"/>
-            <h1 className="font-bold text-xl font-sans text-black text-center md:text-left py-4 md:pt-8">Follow Me</h1>
-                <ol className="flex-col text-center md:text-left">
+            <h1 className="font-bold text-xl font-sans text-white text-center md:text-left py-4 md:pt-8">Follow Me</h1>
+                <ol className="flex-col text-center md:text-left text-white">
                     <li><Link href="https://www.linkedin.com/in/amraha-anwar-45bb342b3/" target="main"><u>LinkedIn</u></Link></li>
                     <li><Link href="https://www.instagram.com/amrahaanwar/?hl=en" target="main"><u>Instagram</u></Link></li>
                     <li> <Link href="https://github.com/Amraha-Anwar" target="main"><u>Github</u></Link></li>
